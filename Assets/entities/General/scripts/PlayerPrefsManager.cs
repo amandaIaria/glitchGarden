@@ -8,7 +8,7 @@ public class PlayerPrefsManager : MonoBehaviour {
 	const string LEVEL_KEY = "level_unlocked_";
 	
 	public static void SetMasterVolume(float volume){
-		if(volume > 0f && volume < 1f){
+		if(volume > 0f && volume <= 1f){
 			PlayerPrefs.SetFloat (MASTER_VOLUME_KEY, volume);
 		}	
 		else{
@@ -18,7 +18,7 @@ public class PlayerPrefsManager : MonoBehaviour {
 	
 	public static void UnlockLevel(int level){
 		if(level <= Application.levelCount -1){
-			PlayerPrefs.SetInt(LEVEL_KEY + level.ToString, 1); //use 1 for true;
+			PlayerPrefs.SetInt(LEVEL_KEY + level.ToString(), 1); //use 1 for true;
 		}
 		else{
 			Debug.LogError("The level is not in the build order");
@@ -26,7 +26,7 @@ public class PlayerPrefsManager : MonoBehaviour {
 	}
 	
 	public static void SetDifficulty( float difficulty ){
-		if(difficulty >= 0f && difficulty <= 1f){
+		if(difficulty >= 1f && difficulty <= 3f){
 			PlayerPrefs.SetFloat(DIFFICULTY_KEY ,difficulty);
 		}
 		else{
