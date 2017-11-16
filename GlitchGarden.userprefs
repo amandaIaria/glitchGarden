@@ -3,9 +3,10 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\entities\General\scripts\PlayerPrefsManager.cs">
     <Files>
       <File FileName="Assets\entities\General\scripts\LevelManager.cs" Line="8" Column="12" />
-      <File FileName="Assets\entities\General\scripts\MusicManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\entities\General\scripts\MusicManager.cs" Line="29" Column="24" />
       <File FileName="Assets\entities\General\scripts\FadeInandFadeOut.cs" Line="30" Column="37" />
-      <File FileName="Assets\entities\General\scripts\PlayerPrefsManager.cs" Line="29" Column="39" />
+      <File FileName="Assets\entities\General\scripts\PlayerPrefsManager.cs" Line="11" Column="30" />
+      <File FileName="Assets\entities\General\scripts\OptionsController.cs" Line="30" Column="30" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
